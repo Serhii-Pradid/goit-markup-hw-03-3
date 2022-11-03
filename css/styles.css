@@ -10,14 +10,61 @@ body {
   --accent-color: #2196f3;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 button {
   cursor: pointer;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.board {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.desk {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
 /*header*/
 
 .header {
@@ -69,6 +116,7 @@ button {
 .hero {
   background-color: var(--main-background-color);
   color: #ffff;
+  text-align: center;
 }
 
 .hero-title {
@@ -79,6 +127,7 @@ button {
 }
 
 .btn {
+  display: inline-block;
   background: var(--accent-color);
   color: #ffff;
   font-family: 'Roboto';
@@ -86,6 +135,11 @@ button {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 152px;
+  min-height: 30px;
+  margin-bottom: 200px;
 }
 
 /* button hero*/
@@ -109,6 +163,7 @@ button {
 }
 
 .advantage-point {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428;
@@ -121,19 +176,28 @@ button {
   line-height: 1.7142;
 }
 
+/*Activity*/
+.activity {
+  text-align: center;
+}
+
 /*team*/
 
 .team {
   background-color: #f5f4fa;
+  text-align: center;
 }
 
 .team-names {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
 }
 
 .team-review p {
+  margin-bottom: 30px;
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.1875;
@@ -175,6 +239,7 @@ button {
 /* ПОРТФОЛІО*/
 
 .portfolio-buttons button {
+  min-width: 73px;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -182,6 +247,12 @@ button {
   border: none;
   background: #f5f4fa;
   color: #212121;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  text-align: center;
 }
 
 .portfolio-buttons button:hover,
@@ -193,9 +264,12 @@ button {
 
 .portfolio-examples li {
   background-color: #ffffff;
+  text-align: center;
 }
 
 .project-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -203,6 +277,7 @@ button {
 }
 
 .portfolio-examples p {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.875;
   color: var(--main-text-color);
