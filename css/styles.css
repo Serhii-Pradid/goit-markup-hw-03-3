@@ -65,7 +65,13 @@ button {
   padding-top: 94px;
   padding-bottom: 0;
 }
+
 /*header*/
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
 
 .header {
   background-color: #ffff;
@@ -84,7 +90,25 @@ button {
   text-decoration: none;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav .item + .item {
+  margin-left: 50px;
+}
+
 .nav a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -92,9 +116,19 @@ button {
   text-decoration: none;
   letter-spacing: 0.02em;
 }
+
 .nav a:hover,
 .nav a:focus {
   color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
 }
 
 .contacts a {
@@ -157,6 +191,7 @@ button {
 /* advatages*/
 
 .title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666;
@@ -260,6 +295,13 @@ button {
 .portfolio-buttons button:active {
   color: #ffffff;
   background-color: var(--accent-color);
+}
+
+.portfolio-buttons .main {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .portfolio-examples li {
