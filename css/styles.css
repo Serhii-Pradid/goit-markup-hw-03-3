@@ -58,7 +58,7 @@ button {
 
 .board {
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 280px;
 }
 
 .desk {
@@ -82,6 +82,8 @@ button {
 }
 
 .logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: 'Raleway';
   color: #000000;
   font-weight: 700;
@@ -197,6 +199,20 @@ button {
   line-height: 1.1666;
 }
 
+.advantage-review {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantage-review .item {
+  width: 270px;
+}
+
+.advantage-review .item + .item {
+  margin-left: 30px;
+}
+
 .advantage-point {
   margin-bottom: 10px;
   font-weight: 700;
@@ -212,8 +228,18 @@ button {
 }
 
 /*Activity*/
+
 .activity {
   text-align: center;
+}
+
+.activity-review {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-review .item + .item {
+  margin-left: 30px;
 }
 
 /*team*/
@@ -221,6 +247,15 @@ button {
 .team {
   background-color: #f5f4fa;
   text-align: center;
+}
+
+.team-review {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-review .item + .item {
+  margin-left: 30px;
 }
 
 .team-names {
