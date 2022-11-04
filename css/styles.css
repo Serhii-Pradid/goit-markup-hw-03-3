@@ -100,11 +100,12 @@ button {
 .nav {
   display: flex;
   margin-left: 93px;
+  gap: 50px;
 }
 
-.nav .item + .item {
+/*.nav .item + .item {
   margin-left: 50px;
-}
+}*/
 
 .nav a {
   display: block;
@@ -127,11 +128,12 @@ button {
 .contacts {
   display: flex;
   margin-left: auto;
+  gap: 50px;
 }
 
-.contacts .item + .item {
+/*.contacts .item + .item {
   margin-left: 50px;
-}
+}*/
 
 .contacts a {
   color: #757575;
@@ -156,6 +158,9 @@ button {
 }
 
 .hero-title {
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3636;
@@ -175,7 +180,7 @@ button {
   padding: 10px 32px;
   min-width: 152px;
   min-height: 30px;
-  margin-bottom: 200px;
+  margin-top: 30px;
 }
 
 /* button hero*/
@@ -202,16 +207,19 @@ button {
 .advantage-review {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   justify-content: space-between;
 }
 
 .advantage-review .item {
-  width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
+
+  /*width: 270px;*/
 }
 
-.advantage-review .item + .item {
-  margin-left: 30px;
-}
+/*.advantage-review .item + .item {
+margin-left: 30px;
+}*/
 
 .advantage-point {
   margin-bottom: 10px;
@@ -235,12 +243,17 @@ button {
 
 .activity-review {
   display: flex;
+  gap: 30px;
   justify-content: space-between;
 }
 
-.activity-review .item + .item {
-  margin-left: 30px;
+.activity-review .item {
+  flex-basis: calc((100% - 60px) / 3);
 }
+
+/*.activity-review .item + .item {
+  margin-left: 30px;
+}*/
 
 /*team*/
 
@@ -251,12 +264,16 @@ button {
 
 .team-review {
   display: flex;
+  gap: 30px;
   justify-content: space-between;
 }
 
-.team-review .item + .item {
-  margin-left: 30px;
+team-review .item {
+  flex-basis: calc((100% - 90px) / 4);
 }
+/*.team-review .item + .item {
+  margin-left: 30px;
+}*/
 
 .team-names {
   margin-top: 30px;
@@ -273,7 +290,12 @@ button {
   line-height: 1.1875;
 }
 
+/*.team-review .item {
+  border: 2px;
+}*/
+
 /*footer*/
+
 .footer {
   background-color: var(--main-background-color);
 }
@@ -308,6 +330,22 @@ button {
 
 /* ПОРТФОЛІО*/
 
+.portfolio-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+/*.portfolio-buttons .item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.portfolio-buttons .item + .item {
+  margin-left: 8px;
+}*/
+
 .portfolio-buttons button {
   min-width: 73px;
   font-family: 'Roboto';
@@ -339,7 +377,14 @@ button {
   padding-left: 25px;
 }
 
-.portfolio-examples li {
+.portfolio-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.portfolio-examples .item {
   background-color: #ffffff;
   text-align: center;
 }
